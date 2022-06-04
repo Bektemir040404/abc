@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body {
+			margin: 0px;
+		}
+		.text {
+			text-align: center;
+			font-size: 40px;
+		}
+		.box {
+			border: 2px solid green;
+			padding: 20px;
+		}
+		.box2 {
+			position: relative;
+			width: 500px;
+			height: 300px;
+			overflow: hidden;
+			border: 2px solid blue;
+			transition: .5s;
+			display: inline-block;
+		}
+		.box2:hover {
+			border-radius: 20px;
+		}
+		img {
+			width: 500px;
+			height: 300px;
+			transition: .5s;
+		}
+		.box2:hover > img {
+			width: 550px;
+			height: 330px;
+		}
+		span {
+			position: absolute;
+			width: 300px;
+			background-color: white;
+			opacity: .8;
+			transform: translate(10px, 90px);
+			right: 5px;
+			bottom: 5px;
+			transition: .5s;
+			border-radius: 10px;
+			padding: 10px;
+		}
+		.box2:hover>span {
+			transform: translate(-5px, -5px);
+		}
+	</style>
+</head>
+<body>
+	<div class="text">Breaking news</div>
+	<div class="box">
+		<div class="box2">
+			<img src="https://cdni.rt.com/russian/images/2020.12/article/5fe0633a02e8bd45672bb3f5.JPG">
+			<span>Последние новости о персоне Дональд Трамп новости личной жизни, карьеры, биография и многое другое.</span>
+		</div>
+		<div style="margin-left: 20px;" class="box2">
+			<img src="http://cdn.iz.ru/sites/default/files/styles/900x506/public/news-2021-01/2021-01-20T195909Z_1660781174_RC2VBL9EDH5Q_RTRMADP_3_USA-TRUMP.JPG.jpg?itok=POdS0pD-">
+			<span>Последние новости о персоне Дональд Трамп новости личной жизни, карьеры, биография и многое другое.</span>
+		</div>
+	</div>
+</body>
+</html>
